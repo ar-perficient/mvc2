@@ -1,0 +1,188 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.main {
+    background: #fff none repeat scroll 0 0;
+    margin: 7em auto 0;
+    width: 80%;
+}
+
+
+form {
+    padding-bottom: 2em;
+}
+
+.left-form, .right-form {
+    float: left;
+    margin: 22px 28px;
+    width: 40%;
+}
+ol, ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.right-form {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.main h2, .main h3 {
+    color: #3f3d3d;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 3px;
+    text-align: left;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.left-form li {
+    border-radius: 0.3em;
+    color: #4d4949;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.left-form input[type="text"], .left-form input[type="email"], .left-form input[type="password"] {
+    color: #000;
+    float: left;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    outline: medium none;
+    padding: 0.7em 2em 0.7em 1em;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+}
+
+.ticker {
+    background: rgba(0, 0, 0, 0) url("../images/spirit.png") no-repeat scroll 0 0;
+}
+
+.icon {
+    background: rgba(0, 0, 0, 0) url("../images/spirit.png") no-repeat scroll 0 0;
+    display: block;
+    float: right;
+    height: 28px;
+    margin: 7px 9px 9px 0;
+    width: 28px;
+}
+a {
+    text-decoration: none;
+}
+
+
+.left-form > label {
+    color: #4c4a4a;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 2px;
+    vertical-align: super;
+}
+
+
+.left-form input[type="submit"] {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+    color: #4d4949;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    outline: medium none;
+    padding: 10px 19px;
+    transition: all 0.5s ease-out 0s;
+}
+
+
+.main h2, .main h3 {
+    color: #3f3d3d;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 3px;
+    text-align: left;
+}
+
+
+.right-form input[type="text"], input[type="password"] {
+    color: #000;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    outline: medium none;
+    padding: 0.7em 1em;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+}
+
+
+.right-form li {
+    border: 1px solid #ebebeb;
+    border-radius: 0.3em;
+    color: #4d4949;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.main h4 {
+    color: #363535;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.right-form input[type="submit"] {
+    border: medium none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2em -9em;
+    outline: medium none;
+    padding: 8px 19px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.isa_info, .isa_success, .isa_warning, .isa_error {
+    padding:12px;
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}

@@ -1,0 +1,110 @@
+[09-03-2016 07:18:29] Uncaught ActiveRecord\DatabaseException: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in MVC\Config\Lib\ActiveRecord\lib\Connection.php:202
+Stack trace:
+#0 MVC\Config\Lib\ActiveRecord\lib\Connection.php(202): PDO->__construct('mysql:host=127....', 'root', 'root', Array)
+#1 MVC\Config\Lib\ActiveRecord\lib\Connection.php(99): ActiveRecord\Connection->__construct(Object(stdClass))
+#2 MVC\Config\Lib\ActiveRecord\lib\ConnectionManager.php(33): ActiveRecord\Connection::instance('development')
+#3 MVC\Config\Lib\ActiveRecord\lib\Table.php(83): ActiveRecord\ConnectionManager::get_connection(NULL)
+#4 MVC\Config\Lib\ActiveRecord\lib\Table.php(61): ActiveRecord\Table->__construct('Index')
+#5 MVC\Config\Lib\ActiveRecord\lib\Model.php(725): ActiveRecord\Table::load('Index')
+#6 MVC\Config\Lib\ActiveRecord\lib\Model.php(353): ActiveRecord\Model::table()
+#7 MVC\Config\Framework\BaseController.php(18): ActiveRecord\Model->__construct()
+#8 MVC\Config\Framework\Route.php(26): Config_Framework_BaseController->__construct()
+#9 MVC\Config\Framework\App.php(34): Config_Framework_Route->__construct()
+#10 MVC\index.php(15): Config_Framework_App->run()
+#11 {main} on MVC\Config\Lib\ActiveRecord\lib\Connection.php in line 204
+[09-03-2016 07:19:47] Notice: Undefined property: IndexController::$view in MVC\app\Controllers\IndexController.php on line 8
+[09-03-2016 07:19:47] Fatal Error: Call to a member function set() on a non-object in MVC\app\Controllers\IndexController.php on line 8
+[09-03-2016 08:24:46] Notice: Undefined property: IndexController::$model in MVC\app\Controllers\IndexController.php on line 8
+[09-03-2016 08:27:20] Notice: Undefined property: IndexController::$model in MVC\app\Controllers\IndexController.php on line 8
+[09-03-2016 09:03:09] Uncaught ActiveRecord\UndefinedPropertyException: Undefined property: Index->table_name in MVC\Config\Lib\ActiveRecord\lib\Model.php on line 524 on MVC\Config\Lib\ActiveRecord\lib\Model.php in line 524
+[09-03-2016 09:03:27] Fatal Error: Undefined class constant 'table_name' in MVC\Config\Framework\BaseController.php on line 105
+[09-03-2016 09:06:58] Fatal Error: Undefined class constant 'table_name' in MVC\Config\Framework\BaseController.php on line 105
+[09-03-2016 09:08:04] Fatal Error: Using $this when not in object context in MVC\Config\Framework\BaseController.php on line 104
+[10-03-2016 07:25:35] Fatal Error: Access to undeclared static property: Config_Framework_AppModel::$model in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:27:57] Fatal Error: Access to undeclared static property: Config_Framework_AppModel::$model in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:29:04] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_model in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:30:18] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_model in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:31:47] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:32:55] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:33:20] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:33:48] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:38:27] Compile Error: Cannot redeclare activerecord_autoload() (previously declared in MVC\Config\Lib\ActiveRecord\ActiveRecord.php:24) in MVC\Config\Lib\ActiveRecord\ActiveRecord.php on line 43
+[10-03-2016 07:38:51] Compile Error: Cannot redeclare activerecord_autoload() (previously declared in MVC\Config\Lib\ActiveRecord\ActiveRecord.php:24) in MVC\Config\Lib\ActiveRecord\ActiveRecord.php on line 43
+[10-03-2016 07:40:15] Compile Error: Cannot redeclare activerecord_autoload() (previously declared in MVC\Config\Lib\ActiveRecord\ActiveRecord.php:24) in MVC\Config\Lib\ActiveRecord\ActiveRecord.php on line 43
+[10-03-2016 07:46:44] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:47:11] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:47:20] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:47:36] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:47:48] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:48:17] Fatal Error: Access to undeclared static property: Config_Framework_Database::$_modelClass in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:49:07] Fatal Error: Access to undeclared static property: Config_Framework_AppModel::$_model in MVC\Config\Framework\AppModel.php on line 14
+[10-03-2016 07:56:42] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:56:42] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:08] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:08] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:10] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:40] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:40] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:48] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 07:57:48] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 75
+[10-03-2016 08:20:29] Notice: Undefined property: Config_Framework_Database::$getControllersDir in MVC\Config\Framework\App.php on line 95
+[10-03-2016 08:41:05] Warning: include_once(Data.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:41:05] Warning: include_once(): Failed opening 'Data.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:41:05] Fatal Error: Class 'data' not found in MVC\Config\Framework\AppModel.php on line 78
+[10-03-2016 08:46:32] Warning: include_once(Data.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:46:32] Warning: include_once(): Failed opening 'Data.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:46:32] Fatal Error: Class 'data' not found in MVC\Config\Framework\AppModel.php on line 78
+[10-03-2016 08:46:49] Warning: include_once(Data.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:46:49] Warning: include_once(): Failed opening 'Data.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:46:49] Fatal Error: Class 'data' not found in MVC\Config\Framework\AppModel.php on line 78
+[10-03-2016 08:48:29] Warning: include_once(Data.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:48:29] Warning: include_once(): Failed opening 'Data.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:48:29] Fatal Error: Class 'data' not found in MVC\Config\Framework\AppModel.php on line 79
+[10-03-2016 08:51:40] Warning: include_once(Data.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:51:40] Warning: include_once(): Failed opening 'Data.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:51:40] Fatal Error: Class 'data' not found in MVC\Config\Framework\AppModel.php on line 66
+[10-03-2016 08:52:31] Warning: include_once(Book.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:52:31] Warning: include_once(): Failed opening 'Book.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:52:31] Fatal Error: Class 'Book' not found in MVC\Config\Framework\AppModel.php on line 66
+[10-03-2016 08:54:37] Warning: include_once(Book.php): failed to open stream: No such file or directory in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:54:37] Warning: include_once(): Failed opening 'Book.php' for inclusion (include_path='.;C:\xampp\php\PEAR') in MVC\Config\Framework\App.php on line 117
+[10-03-2016 08:54:37] Fatal Error: Class 'Book' not found in MVC\Config\Framework\AppModel.php on line 66
+[10-03-2016 09:03:50] Recoverable Error: Object of class Index could not be converted to string in MVC\Config\Framework\AppModel.php on line 65
+[10-03-2016 09:04:02] Recoverable Error: Object of class Index could not be converted to string in MVC\Config\Framework\AppModel.php on line 65
+[11-03-2016 06:56:47] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:56:47] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:56:47] Fatal Error: Class name must be a valid object or a string in MVC\Config\Framework\AppModel.php on line 78
+[11-03-2016 06:57:58] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:57:58] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:57:58] Fatal Error: Class name must be a valid object or a string in MVC\Config\Framework\AppModel.php on line 78
+[11-03-2016 06:58:11] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:58:11] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 06:58:11] Fatal Error: Class name must be a valid object or a string in MVC\Config\Framework\AppModel.php on line 78
+[11-03-2016 07:01:23] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:23] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:38] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:48] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:01:48] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:00] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:00] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:12] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:12] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:13] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:13] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:23] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:23] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:57] Strict Notice: Accessing static property Index::$table_name as non static in MVC\Config\Framework\AppModel.php on line 77
+[11-03-2016 07:02:57] Notice: Undefined property: Index::$table_name in MVC\Config\Framework\AppModel.php on line 77

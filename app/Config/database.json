@@ -1,0 +1,14 @@
+{
+    "defaultsetup": {
+        "connection": {
+            "host": "localhost",
+            "username": "root",
+            "password": "root",
+            "dbname": "mvc",
+            "initStatements": "SET NAMES utf8",
+            "model": "mysql4",
+            "type": "pdo_mysql",
+            "active": "1"
+        }
+    }
+}

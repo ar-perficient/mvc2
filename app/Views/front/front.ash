@@ -1,0 +1,1 @@
+<div class="fname">{name}</div>
