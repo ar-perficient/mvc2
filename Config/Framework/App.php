@@ -129,7 +129,6 @@ class Config_Framework_App
             foreach ($autoloadFuncs as $unregisterFunc) {
                 spl_autoload_unregister($unregisterFunc);
             }
-//            echo '<pre>';print_r($class);exit;
         } else {
             $class = str_replace('_', '/', ucwords($class));
             return include_once $class.'.php';

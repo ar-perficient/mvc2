@@ -11,6 +11,7 @@ class Config_Framework_BaseController extends Config_Framework_App
     public function __construct()
     {
         $this->loadModel();
+        $this->view = new Config_Framework_Template();
     }
 
     /**
